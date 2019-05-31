@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Panel from './Panel'
+import Panel from '.'
 
 it('renders', () => {
   const wrapper = shallow(

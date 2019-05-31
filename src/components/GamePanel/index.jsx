@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header'
-import Panel from './Panel'
+import Header from '../Header'
+import Panel from '../Panel'
 
 function GamePanel() {
   return (

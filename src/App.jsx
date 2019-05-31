@@ -1,5 +1,5 @@
 import React from 'react'
-import GamePanel from './GamePanel'
+import GamePanel from './components/GamePanel'
 import './App.css'
 
 function App() {
