@@ -1,7 +1,7 @@
 import React from 'react'
 
-function Panel({ children }) {
-  return <div className="Panel">{children}</div>
+function Panel({ children, className }) {
+  return <div className={`panel ${className}`}>{children}</div>
 }
 
 export default Panel

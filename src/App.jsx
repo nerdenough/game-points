@@ -1,11 +1,13 @@
 import React from 'react'
 import GamePanel from './components/GamePanel'
+import ScorePanel from './components/ScorePanel'
 import './App.css'
 
 function App() {
   return (
-    <div className="app">
+    <div className="App">
       <GamePanel />
+      <ScorePanel />
     </div>
   )
 }
