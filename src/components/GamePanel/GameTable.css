@@ -5,7 +5,7 @@
 
 .GameTable--items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
 
@@ -14,6 +14,7 @@
   background: black;
   color: white;
   width: 100%;
+  min-width: 10rem;
   height: 10rem;
   align-items: center;
   justify-content: center;
