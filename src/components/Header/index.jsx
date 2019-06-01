@@ -1,9 +1,10 @@
 import React from 'react'
+import './index.css'
 
 function Header({ children }) {
   return (
-    <div className="header">
-      <h1>{children}</h1>
+    <div className="Header">
+      <h1 className="Header--title">{children}</h1>
     </div>
   )
 }
