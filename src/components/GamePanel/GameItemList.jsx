@@ -1,9 +1,8 @@
 import React from 'react'
 import GameItem from './GameItem'
-import items from '../../items.json'
 import './GameItemList.css'
 
-function GameItemList() {
+function GameItemList({ items }) {
   return (
     <div className="GameItemList">
       {items.map(item => (
