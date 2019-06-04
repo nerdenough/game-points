@@ -1,14 +1,21 @@
 import React from 'react'
 import GameItem from './GameItem'
+import { GameContext } from '../../App'
 import './GameItemList.css'
 
-function GameItemList({ items }) {
+function GameItemList() {
   return (
-    <div className="GameItemList">
-      {items.map(item => (
-        <GameItem {...item} />
-      ))}
-    </div>
+    <GameContext.Consumer>
+      {({ addScore, items }) => {
+        return (
+          <div className="GameItemList">
+            {items.map(item => (
+              <GameItem item={item} addScore={addScore} />
+            ))}
+          </div>
+        )
+      }}
+    </GameContext.Consumer>
   )
 }
 

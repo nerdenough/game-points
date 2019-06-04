@@ -5,6 +5,7 @@ import items from './items.json'
 import './App.css'
 
 export const GameContext = React.createContext({
+  items: [],
   scores: {},
   addScore: item => {},
 })
@@ -32,6 +33,7 @@ class App extends React.Component {
 
     // Initial state should have an empty object for scores
     this.state = {
+      items,
       scores: {},
       addScore: this.addScore,
     }
