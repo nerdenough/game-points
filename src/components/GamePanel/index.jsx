@@ -4,11 +4,11 @@ import Header from '../Header'
 import Panel from '../Panel'
 import './index.css'
 
-function GamePanel({ items }) {
+function GamePanel() {
   return (
     <Panel className="GamePanel">
       <Header>Kahoot! Points</Header>
-      <GameTable items={items} />
+      <GameTable />
     </Panel>
   )
 }

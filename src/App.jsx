@@ -43,8 +43,8 @@ class App extends React.Component {
     return (
       <GameContext.Provider value={this.state}>
         <div className="App">
-          <GamePanel items={items} />
-          <ScorePanel items={items} />
+          <GamePanel />
+          <ScorePanel />
         </div>
       </GameContext.Provider>
     )
