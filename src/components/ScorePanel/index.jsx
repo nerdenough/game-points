@@ -10,12 +10,20 @@ function ScorePanel() {
   return (
     <GameContext.Consumer>
       {({ items, scores, newGame }) => {
+        const total = Object.keys(scores).reduce(
+          (acc, key) => acc + scores[key].score + scores[key].bonus,
+          0
+        )
+        const bonusTotal = Object.keys(scores).reduce(
+          (acc, key) => acc + scores[key].bonus,
+          0
+        )
         return (
           <Panel className="ScorePanel">
             <Header>Player Items</Header>
             <ScoreTable scores={scores} />
-            <div className="ScorePanel--bonuses" />
-            <ScoreTotal total={0} newGame={newGame} />
+            <div className="ScorePanel--bonuses">Bonuses {bonusTotal}</div>
+            <ScoreTotal total={total} newGame={newGame} />
           </Panel>
         )
       }}

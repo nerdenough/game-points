@@ -17,18 +17,22 @@ class App extends React.Component {
 
     this.addScore = item => {
       this.setState(state => {
-        // Add 1 to the score each time, or initialise if needed.
-        // This persists the number of times an item has been
-        // earned. We will then calculate the points with bonus
-        // later on.
         const qty = state.scores[item.name]
           ? state.scores[item.name].qty + 1
           : 1
+
         const score = qty * item.points
+
+        // Bonus only applies to items with a bonus
+        const bonus = item.bonus
+          ? Math.floor(qty / item.bonus) * item.points
+          : 0
+
         const newScores = state.scores
         newScores[item.name] = {
           qty,
           score,
+          bonus,
         }
 
         return {

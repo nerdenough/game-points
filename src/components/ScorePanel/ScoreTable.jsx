@@ -20,7 +20,9 @@ function ScoreTable({ scores }) {
               {scores[key].qty}
             </div>
             <div className="ScoreTable--column ScoreTable--column-right">
-              {scores[key].score}
+              {scores[key].bonus
+                ? scores[key].score + scores[key].bonus
+                : scores[key].score}
             </div>
           </div>
         )
