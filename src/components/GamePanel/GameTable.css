@@ -1,4 +1,9 @@
 .GameTable {
   flex-grow: 1;
-  padding: 0 2rem;
+  padding: 2rem;
+}
+
+.GameTable--title {
+  font-weight: normal;
+  margin: 0;
 }
