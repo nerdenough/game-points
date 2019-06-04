@@ -6,7 +6,7 @@ function ScoreTotal({ total, newGame }) {
     <div className="ScoreTotal">
       <div className="ScoreTotal--total">
         <h3>Total</h3>
-        <p>{total}</p>
+        <p className="ScoreTotal--score">{total}</p>
       </div>
       <div className="ScoreTotal--new">
         <button className="ScoreTotal--button" onClick={newGame}>
