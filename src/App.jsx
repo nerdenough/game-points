@@ -8,6 +8,7 @@ export const GameContext = React.createContext({
   items: [],
   scores: {},
   addScore: item => {},
+  newGame: () => {},
 })
 
 class App extends React.Component {
@@ -20,9 +21,15 @@ class App extends React.Component {
         // This persists the number of times an item has been
         // earned. We will then calculate the points with bonus
         // later on.
-        const score = state.scores[item.name] ? state.scores[item.name] + 1 : 1
+        const qty = state.scores[item.name]
+          ? state.scores[item.name].qty + 1
+          : 1
+        const score = qty * item.points
         const newScores = state.scores
-        newScores[item.name] = score
+        newScores[item.name] = {
+          qty,
+          score,
+        }
 
         return {
           ...state,
@@ -31,11 +38,19 @@ class App extends React.Component {
       })
     }
 
+    this.newGame = () => {
+      this.setState(state => ({
+        ...state,
+        scores: {},
+      }))
+    }
+
     // Initial state should have an empty object for scores
     this.state = {
       items,
       scores: {},
       addScore: this.addScore,
+      newGame: this.newGame,
     }
   }
 

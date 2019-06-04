@@ -10,7 +10,7 @@ function GameItemList() {
         return (
           <div className="GameItemList">
             {items.map(item => (
-              <GameItem item={item} addScore={addScore} />
+              <GameItem key={item.name} item={item} addScore={addScore} />
             ))}
           </div>
         )

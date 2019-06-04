@@ -1,11 +1,13 @@
 [
   {
     "name": "A",
-    "points": 50
+    "points": 50,
+    "bonus": 3
   },
   {
     "name": "B",
-    "points": 30
+    "points": 30,
+    "bonus": 2
   },
   {
     "name": "C",
