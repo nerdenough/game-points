@@ -1,4 +1,5 @@
 import React from 'react'
+import './ScoreTotal.css'
 
 function ScoreTotal({ total, newGame }) {
   return (
@@ -7,9 +8,11 @@ function ScoreTotal({ total, newGame }) {
         <h3>Total</h3>
         <p>{total}</p>
       </div>
-      <button className="ScoreTotal--new" onClick={newGame}>
-        New Game
-      </button>
+      <div className="ScoreTotal--new">
+        <button className="ScoreTotal--button" onClick={newGame}>
+          New Game
+        </button>
+      </div>
     </div>
   )
 }

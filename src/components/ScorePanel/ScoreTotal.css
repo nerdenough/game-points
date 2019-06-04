@@ -1,0 +1,36 @@
+.ScoreTotal {
+  display: flex;
+  border-left: 1px solid #cecece;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.ScoreTotal--total {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.ScoreTotal--total h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.ScoreTotal--total p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 2.4rem;
+}
+
+.ScoreTotal--new {
+  display: flex;
+  align-items: center;
+}
+
+.ScoreTotal--button {
+  font-size: 1.6rem;
+  padding: 2rem;
+  border: 1px solid #cecece;
+  background: #efefef;
+  border-radius: 0.5rem;
+}
