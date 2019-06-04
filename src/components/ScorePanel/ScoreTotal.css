@@ -1,6 +1,5 @@
 .ScoreTotal {
   display: flex;
-  border-left: 1px solid #cecece;
   padding: 2rem;
   font-size: 1.6rem;
 }
@@ -30,7 +29,13 @@
 .ScoreTotal--button {
   font-size: 1.6rem;
   padding: 2rem;
-  border: 1px solid #cecece;
-  background: #efefef;
+  border: 0.2rem solid rgb(161, 81, 214);
+  background: rgb(161, 81, 214);
+  color: white;
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.ScoreTotal--button:hover {
+  background: rgb(184, 127, 223);
 }

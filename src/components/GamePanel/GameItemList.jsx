@@ -9,8 +9,8 @@ function GameItemList() {
       {({ addScore, items }) => {
         return (
           <div className="GameItemList">
-            {items.map(item => (
-              <GameItem key={item.name} item={item} addScore={addScore} />
+            {Object.keys(items).map(key => (
+              <GameItem key={key} item={items[key]} addScore={addScore} />
             ))}
           </div>
         )

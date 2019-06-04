@@ -1,7 +1,7 @@
 import React from 'react'
 import './ScoreTable.css'
 
-function ScoreTable({ scores }) {
+function ScoreTable({ items, scores }) {
   return (
     <div className="ScoreTable">
       <div className="ScoreTable--row ScoreTable--row-header">
@@ -14,7 +14,12 @@ function ScoreTable({ scores }) {
         return (
           <div className="ScoreTable--row" key={key}>
             <div className="ScoreTable--column ScoreTable--column-left">
-              <div className="ScoreTable--game-item">{key}</div>
+              <div
+                className="ScoreTable--game-item"
+                style={{ backgroundColor: items[key].color }}
+              >
+                {key}
+              </div>
             </div>
             <div className="ScoreTable--column ScoreTable--column-middle">
               {scores[key].qty}

@@ -21,7 +21,7 @@ function ScorePanel() {
         return (
           <Panel className="ScorePanel">
             <Header>Player Items</Header>
-            <ScoreTable scores={scores} />
+            <ScoreTable scores={scores} items={items} />
             <div className="ScorePanel--bonuses">
               <span className="ScorePanel--bonus-title">Bonuses&nbsp;</span>
               {bonusTotal}

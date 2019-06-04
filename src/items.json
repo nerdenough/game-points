@@ -1,24 +1,29 @@
-[
-  {
+{
+  "A": {
     "name": "A",
     "points": 50,
-    "bonus": 3
+    "bonus": 3,
+    "color": "rgb(231, 71, 85)"
   },
-  {
+  "B": {
     "name": "B",
     "points": 30,
-    "bonus": 2
+    "bonus": 2,
+    "color": "rgb(231, 122, 71)"
   },
-  {
+  "C": {
     "name": "C",
-    "points": 20
+    "points": 20,
+    "color": "rgb(231, 215, 71)"
   },
-  {
+  "D": {
     "name": "D",
-    "points": 15
+    "points": 15,
+    "color": "rgb(71, 231, 111)"
   },
-  {
+  "E": {
     "name": "E",
-    "points": 10
+    "points": 10,
+    "color": "rgb(71, 74, 231)"
   }
-]
+}

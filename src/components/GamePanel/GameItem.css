@@ -1,6 +1,5 @@
 .GameItem {
   display: flex;
-  background: black;
   color: white;
   width: 10rem;
   height: 10rem;
@@ -9,4 +8,6 @@
   justify-content: center;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }

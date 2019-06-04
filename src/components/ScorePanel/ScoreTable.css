@@ -2,17 +2,17 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  border-left: 1px solid #cecece;
 }
 
 .ScoreTable--row {
   display: flex;
   padding: 2rem;
-  border-bottom: 1px solid #cecece;
+  border-bottom: 0.2rem solid rgb(161, 81, 214);
   align-items: center;
 }
 
 .ScoreTable--row-header {
+  background: rgb(161, 81, 214);
   font-size: 1.6rem;
 }
 
@@ -36,11 +36,11 @@
 
 .ScoreTable--game-item {
   display: flex;
-  background: black;
   color: white;
   width: 5rem;
   height: 5rem;
   font-size: 1.6rem;
   align-items: center;
   justify-content: center;
+  border-radius: 0.5rem;
 }
